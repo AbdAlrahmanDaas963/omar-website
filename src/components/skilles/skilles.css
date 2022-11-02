@@ -1,0 +1,57 @@
+.skilles {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.big-badge {
+  width: 600px;
+  height: 300px;
+  border-radius: 50px;
+  background-color: var(--red);
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  padding: 50px 70px;
+  z-index: -1;
+}
+.big-badge-title {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 40px;
+}
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 100px 0 0 100px;
+}
+.slide-item {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 3px 11px var(--black);
+  border-radius: 10px;
+  margin: 0 7px;
+  background-color: var(--white);
+}
+
+@media screen and (max-width: 400px) {
+  .big-badge {
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0;
+  }
+  .big-badge-title {
+    font-size: 30px;
+  }
+  .slider {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: -100px 0 0 100px;
+  }
+}

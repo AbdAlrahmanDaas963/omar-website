@@ -1,13 +1,49 @@
+:root {
+  --black: #03202f;
+  --red: #c60c30;
+  --blue: #00338d;
+  --gray: #ececec;
+  --white: #ffffff;
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Trebuchet MS";
+}
+ul {
+  margin: 0 !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Trebuchet MS"), url("fonts/trebuc.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Trebuchet MS Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Trebuchet MS Italic"),
+    url("fonts/Trebuchet-MS-Italic.woff") format("woff");
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  height: fit-content;
 }
