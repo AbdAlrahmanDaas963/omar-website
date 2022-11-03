@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, useAnimationControls } from "framer-motion";
 import "./header.css";
+import Burger from "./Burger";
 
 function Header() {
   const [clicked, setClicked] = React.useState(false);
@@ -22,28 +23,37 @@ function Header() {
       height: "0",
     },
   };
+  // const liVar = {
+  //   show: {
+  //     opacity: "1",
+  //   },
+  //   hide: {
+  //     opacity: "0",
+  //     transition: { delay: 0.1 },
+  //   },
+  // };
   const liVar = {
-    show: {
-      opacity: "1",
-    },
-    hide: {
-      opacity: "0",
-      transition: { delay: 0.1 },
-    },
+    visible: (i) => ({
+      opacity: 1,
+      transition: {
+        delay: i * 0.3,
+      },
+    }),
+    hidden: { opacity: 0 },
   };
 
   const handleClick = () => {
-    clicked ? hide() : show();
+    if (window.screen.width < 700) clicked ? hide() : show();
   };
   const show = () => {
     setClicked(true);
     controlsUl.start("show");
-    controlsLi.start("show");
+    controlsLi.start("visible");
   };
   const hide = () => {
     setClicked(false);
     controlsUl.start("hide");
-    controlsLi.start("hide");
+    controlsLi.start("hidden");
   };
   return (
     <div className="header">
@@ -55,12 +65,14 @@ function Header() {
           transition={{ ease: "linear" }}
           className="header-ul"
         >
-          {list.map((item) => (
+          {list.map((item, i) => (
             <motion.li
               variants={liVar}
+              custom={i}
               animate={controlsLi}
               className="header-li"
               key={item.title}
+              onClick={handleClick}
             >
               {item.title}
             </motion.li>
@@ -68,7 +80,7 @@ function Header() {
         </motion.ul>
       </div>
       <div onClick={handleClick} className="burger">
-        more
+        <Burger clicked={clicked} />
       </div>
     </div>
   );

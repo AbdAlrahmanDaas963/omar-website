@@ -12,7 +12,13 @@
   position: relative;
   width: 90%;
   height: 100%;
-  background-color: var(--black);
+  /* background-color: var(--black); */
+
+  background-color: #03202f;
+  /* background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png"); */
+  background-image: url("../../img/asfalt-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
@@ -27,9 +33,30 @@
   margin-bottom: 50px;
 }
 
+.cont {
+  position: relative;
+  width: 320px;
+  height: 290px;
+}
+.omar-img,
+.bubble {
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .omar-img {
-  width: 340px;
-  height: 300px;
+  width: 260px;
+  height: 290px;
+  z-index: 1;
+}
+.bubble {
+  width: 110%;
+  height: 110%;
+  bottom: 0;
+  background-color: var(--red);
+  clip-path: circle(50.1% at 50% 90%);
 }
 .hire-me {
   position: absolute;
@@ -89,6 +116,19 @@
     font-size: 18px;
     width: 170px;
     height: 60px;
+  }
+
+  .cont {
+    width: 300px;
+    height: 270px;
+  }
+  .omar-img {
+    width: 240px;
+    height: 270px;
+  }
+  .bubble {
+    width: 110%;
+    height: 110%;
   }
 }
 

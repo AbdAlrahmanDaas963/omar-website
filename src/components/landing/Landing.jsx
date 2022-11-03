@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import omar from "../../img/omar.png";
+import omarPic from "../../img/omar-pic.png";
+import bubble from "../../img/bubble.png";
 import "./landing.css";
 
 function Landing() {
@@ -19,17 +21,20 @@ function Landing() {
             distinctive form
           </div>
         </div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="content-img"
-        >
-          <img className="omar-img" src={omar} alt="" />
+        <motion.div className="content-img">
+          <div className="cont">
+            <img className="omar-img" src={omarPic} alt="" />
+            <motion.div
+              initial={{ scale: 0, translateX: "-50%" }}
+              animate={{ scale: 1, translateX: "-50%" }}
+              transition={{ duration: 1, type: "spring", bounce: 0.25 }}
+              className="bubble"
+            />
+          </div>
         </motion.div>
         <div className="hire-me">
           <motion.div
-            transition={{ ease: "linear", duration: 0.2 }}
+            transition={{ ease: "linear", duration: 0.1 }}
             whileHover={{
               y: "-4px",
               x: "-4px",
