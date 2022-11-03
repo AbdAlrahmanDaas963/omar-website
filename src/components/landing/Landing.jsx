@@ -40,7 +40,7 @@ function Landing() {
               x: "-4px",
               cursor: "pointer",
             }}
-            whileTap={{ scale: 1.1 }}
+            whileTap={{ y: "0px", x: "0px" }}
             className="hire-me-in"
           >
             Hire me

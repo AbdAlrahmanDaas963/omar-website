@@ -44,6 +44,7 @@ function Header() {
 
   const handleClick = () => {
     if (window.screen.width < 700) clicked ? hide() : show();
+    console.log("clicked");
   };
   const show = () => {
     setClicked(true);
@@ -80,7 +81,7 @@ function Header() {
         </motion.ul>
       </div>
       <div onClick={handleClick} className="burger">
-        <Burger clicked={clicked} />
+        <Burger handleClick={handleClick} clicked={clicked} />
       </div>
     </div>
   );
