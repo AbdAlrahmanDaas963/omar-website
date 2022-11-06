@@ -1,5 +1,5 @@
 import React from "react";
-import { Instagram, Facebook } from "@mui/icons-material";
+import { Instagram, Facebook, Telegram, WhatsApp } from "@mui/icons-material";
 
 import building from "../../img/footer.png";
 import "./footer.css";
@@ -22,6 +22,12 @@ function Footer() {
           </a>
           <a href="">
             <Facebook />
+          </a>
+          <a href="">
+            <Telegram />
+          </a>
+          <a href="">
+            <WhatsApp />
           </a>
         </div>
         <div>

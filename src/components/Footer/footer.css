@@ -27,11 +27,11 @@
 }
 
 /* IE8- CSS hack */
-@media \0screen\, screen\9 {
+/* @media \0screen\, screen\9 {
   .gradient {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4c7a92",endColorstr="#ff03202f",GradientType=0);
   }
-}
+} */
 .footer {
   margin-top: 100px;
   min-height: 100vh;

@@ -8,12 +8,10 @@ function MyWorks() {
       <div className="my-works-content">
         <div className="works-head">My Works</div>
         <div className="works-card">
-          <WorkCard title={"Interior design"} />
-          <WorkCard title={"Interior design"} />
-          <WorkCard title={"Interior design"} />
-          <WorkCard title={"Interior design"} />
-          <WorkCard title={"Interior design"} />
-          <WorkCard title={"Interior design"} />
+          <WorkCard title={"Interior Design"} />
+          <WorkCard title={"Exerior Design"} />
+          <WorkCard title={"Logos"} />
+          <WorkCard title={"Posters"} />
         </div>
       </div>
     </div>
