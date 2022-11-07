@@ -5,62 +5,38 @@
   display: flex;
   align-items: center;
   position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
 }
-.big-badge {
-  width: 600px;
-  height: 300px;
-  border-radius: 50px;
-  background-color: var(--red);
-  position: absolute;
-  left: 50px;
-  top: 100px;
-  padding: 50px 70px;
-  z-index: -1;
-}
-.big-badge-title {
-  color: var(--white);
-  font-weight: bold;
-  font-size: 40px;
+
+.skilles-title {
+  color: var(--white-font);
+  font-weight: normal;
+  font-size: 60px;
 }
 .slider {
   display: flex;
   flex-direction: row;
-  width: fit-content;
-  margin: 100px 0 0 100px;
+  flex-wrap: wrap;
+  width: 350px;
 }
-.slide-item {
-  padding: 20px 40px 0 40px;
-  width: 300px;
-  height: 200px;
-  box-shadow: 0 3px 11px var(--black);
-  border-radius: 10px;
-  margin: 0 7px;
-  background-color: var(--white);
-}
-.slide-item .title {
-  font-weight: bold;
+.slider .title {
   font-size: 20px;
-}
-.slide-item .desc {
-  margin-top: 10px;
-  font-weight: normal;
+  color: var(--black);
+  background-color: var(--white-font);
+  border-radius: 7px;
+  width: fit-content;
+  padding: 8px;
+  margin: 10px;
 }
 
-@media screen and (max-width: 400px) {
-  .big-badge {
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 20px;
-    border-radius: 0;
-  }
-  .big-badge-title {
-    font-size: 30px;
-  }
-  .slider {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    margin: -100px 0 0 100px;
+@media screen and (max-width: 700px) {
+  .skilles {
+    grid-template-columns: 100%;
+    gap: 70px;
   }
 }

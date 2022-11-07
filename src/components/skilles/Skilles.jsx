@@ -1,51 +1,43 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 import SlideItem from "./SlideItem";
 import "./skilles.css";
 
-const left = window.screen.width > 400 ? window.screen.width : 300 * 5;
-console.log("left", left);
-
 function Skilles() {
   const items = [
     {
-      title: "Hand Drawing1",
-      desc: "In publishing and graphic design,Lorem ipsum is a placeholdertext commonlyused to demonstrate",
+      title: "Hand Drawing",
     },
     {
-      title: "Hand Drawing2",
-      desc: "In publishing and graphic design,Lorem ipsum is a placeholdertext commonlyused to demonstrate",
+      title: "LandScapes",
     },
     {
-      title: "Hand Drawing3",
-      desc: "In publishing and graphic design,Lorem ipsum is a placeholdertext commonlyused to demonstrate",
+      title: "3Ds max",
     },
     {
-      title: "Hand Drawing4",
-      desc: "In publishing and graphic design,Lorem ipsum is a placeholdertext commonlyused to demonstrate",
+      title: "Illustrator",
     },
     {
-      title: "Hand Drawing5",
-      desc: "In publishing and graphic design,Lorem ipsum is a placeholdertext commonlyused to demonstrate",
+      title: "Autocad",
+    },
+    {
+      title: "Revit",
+    },
+    {
+      title: "photoshop",
     },
   ];
   return (
     <div className="skilles" id="Skilles">
-      <div className="big-badge">
-        <div className="big-badge-title">Skilles & Experince</div>
+      <div className="skilles-title">
+        Skilles &<br /> Experince
       </div>
-      <motion.div
-        drag={"x"}
-        dragConstraints={{ left: -left, right: 100 }}
-        whileTap={{ cursor: "grabbing" }}
-        whileHover={{ cursor: "grab" }}
-        className="slider"
-      >
+
+      <div className="slider">
         {items.map((item) => (
-          <SlideItem key={item.title} title={item.title} desc={item.desc} />
+          <SlideItem key={item.title} title={item.title} />
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   /* backdrop-filter: blur(39px) brightness(100%); */
-  background-color: var(--white);
+  background-color: var(--white-font);
   z-index: 2;
 }
 .logo {

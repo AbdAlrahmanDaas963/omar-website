@@ -13,25 +13,27 @@ function Footer() {
       </div>
       <div className="footer-body">
         <div>
-          <a href="">omardaas@gmail.com</a>
+          <a target={"_blank"} href="mailto:abdalrahmandaas963@gmail.com">
+            omra08247@gmail.com
+          </a>
           <div className="line" />
         </div>
         <div className="social">
-          <a href="">
+          <a target={"_blank"} href="">
             <Instagram />
           </a>
-          <a href="">
+          <a target={"_blank"} href="">
             <Facebook />
           </a>
-          <a href="">
+          <a target={"_blank"} href="">
             <Telegram />
           </a>
-          <a href="">
+          <a target={"_blank"} href="">
             <WhatsApp />
           </a>
         </div>
         <div>
-          <a href="">+963 934 619 443</a>
+          <a href="tel:+963941599398">+963 941 599 398</a>
           <div className="line" />
           <div className="location">Syria, Hama</div>
         </div>
