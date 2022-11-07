@@ -31,7 +31,7 @@ function Skilles() {
     },
   ];
   return (
-    <div className="skilles">
+    <div className="skilles" id="Skilles">
       <div className="big-badge">
         <div className="big-badge-title">Skilles & Experince</div>
       </div>

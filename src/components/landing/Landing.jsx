@@ -8,7 +8,7 @@ import "./landing.css";
 
 function Landing() {
   return (
-    <div className="landing">
+    <div className="landing" id="Landing">
       <div className="landing-content">
         <div className="content-info">
           <div className="info-head">
@@ -33,7 +33,7 @@ function Landing() {
             />
           </div>
         </motion.div>
-        <div className="hire-me">
+        <a href="#Footer" className="hire-me">
           <motion.div
             transition={{ ease: "linear", duration: 0.1 }}
             whileHover={{
@@ -46,7 +46,7 @@ function Landing() {
           >
             Hire me
           </motion.div>
-        </div>
+        </a>
       </div>
     </div>
   );

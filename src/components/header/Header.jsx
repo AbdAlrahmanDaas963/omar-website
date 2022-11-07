@@ -9,10 +9,10 @@ function Header() {
   const controlsLi = useAnimationControls();
 
   const list = [
-    { title: "About" },
-    { title: "Skilles" },
-    { title: "My Works" },
-    { title: "Contact" },
+    { title: "About", href: "#Landing" },
+    { title: "Skilles", href: "#Skilles" },
+    { title: "My Works", href: "#MyWorks" },
+    { title: "Contact", href: "#Footer" },
   ];
   const ulVar = {
     show: {
@@ -75,7 +75,7 @@ function Header() {
               key={item.title}
               onClick={handleClick}
             >
-              {item.title}
+              <a href={item.href}>{item.title}</a>
             </motion.li>
           ))}
         </motion.ul>

@@ -21,6 +21,12 @@ import Exerior5 from "./images/exerior/5.jpg";
 import Exerior6 from "./images/exerior/6.jpg";
 import Exerior7 from "./images/exerior/7.jpg";
 
+import logo1 from "./images/logo/1.jpg";
+
+import poster1 from "./images/poster/1.jpg";
+import poster2 from "./images/poster/2.jpg";
+import poster3 from "./images/poster/3.jpg";
+
 const InteriorDesign = [
   { src: Interior1 },
   { src: Interior2 },
@@ -48,8 +54,8 @@ const ExeriorDesign = [
   { src: Exerior7 },
 ];
 
-const Logos = [];
-const Posters = [];
+const Logos = [{ src: logo1 }];
+const Posters = [{ src: poster1 }, { src: poster2 }, { src: poster3 }];
 
 const all = { InteriorDesign, ExeriorDesign, Logos, Posters };
 

@@ -6,7 +6,7 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <div className="footer gradient">
+    <div className="footer gradient" id="Footer">
       <div className="footer-head">
         <div className="one">Do you have a project ?</div>
         <div className="two">Let's Start</div>

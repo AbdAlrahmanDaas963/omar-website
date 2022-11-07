@@ -12,6 +12,7 @@ function WorkItem({ src }) {
         src={src}
         alt="That Wanaka Tree, New Zealand by Laura Smetsers"
         width="300"
+        loading="lazy"
       />
     </Zoom>
   );
