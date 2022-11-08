@@ -9,6 +9,11 @@ export default function WorkCard({ title }) {
   const circleCont = useAnimationControls();
   const titleCont = useAnimationControls();
 
+  const handleClick = () => {
+    console.log("first");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const hover = () => {
     circleCont.start("hover");
     titleCont.start("hover");
@@ -39,7 +44,11 @@ export default function WorkCard({ title }) {
   };
 
   return (
-    <Link to={`/${title.replace(/\s/g, "")}`} className="work-card">
+    <Link
+      to={`/${title.replace(/\s/g, "")}`}
+      onClick={handleClick}
+      className="work-card"
+    >
       <motion.div whileHover={hover} onHoverEnd={blur} className="card-content">
         <motion.div
           animate={circleCont}

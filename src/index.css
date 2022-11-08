@@ -32,6 +32,28 @@ a {
 li {
   list-style: none;
 }
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* border-radius: 10px; */
+  background: var(--white-font);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--white);
+  box-shadow: 0 0 5px var(--white);
+  /* border-radius: 10px; */
+}
+
 @font-face {
   font-family: "Trebuchet MS";
   font-style: normal;

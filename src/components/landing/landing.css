@@ -58,11 +58,11 @@
   left: 100px;
   width: 170px;
   height: 60px;
-  background-color: var(--white);
+  background-color: var(--white-font);
   border-radius: 35px;
 }
 .hire-me-in {
-  color: var(--white);
+  color: var(--white-font);
   font-size: 18px;
   width: 170px;
   height: 60px;

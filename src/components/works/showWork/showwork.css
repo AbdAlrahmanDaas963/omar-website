@@ -8,8 +8,18 @@
 .showwork-head {
   height: 100px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  justify-items: center;
+  position: relative;
+}
+.back-btn {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+.back-btn:hover {
+  cursor: pointer;
 }
 .work-item img {
   width: 300px;
