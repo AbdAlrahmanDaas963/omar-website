@@ -2,6 +2,7 @@ import React from "react";
 import { motion, useAnimationControls } from "framer-motion";
 import "./header.css";
 import Burger from "./Burger";
+import { delay } from "../../animation/config";
 
 function Header() {
   const [clicked, setClicked] = React.useState(false);
@@ -23,15 +24,7 @@ function Header() {
       height: "0",
     },
   };
-  const liVar = {
-    visible: (i) => ({
-      opacity: 1,
-      transition: {
-        delay: i * 0.3,
-      },
-    }),
-    hidden: { opacity: 0 },
-  };
+  const liVar = delay;
 
   const handleClick = () => {
     if (window.screen.width < 700) clicked ? hide() : show();

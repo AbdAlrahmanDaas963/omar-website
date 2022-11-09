@@ -13,28 +13,42 @@ function Footer() {
       </div>
       <div className="footer-body">
         <div>
-          <a target={"_blank"} href="mailto:abdalrahmandaas963@gmail.com">
+          <a
+            rel="noopener noreferrer"
+            target={"_blank"}
+            href="mailto:abdalrahmandaas963@gmail.com"
+          >
             omra08247@gmail.com
           </a>
           <div className="line" />
         </div>
         <div className="social">
           <a
+            rel="noopener noreferrer"
             target={"_blank"}
             href="https://instagram.com/omar__daas?igshid=YmMyMTA2M2Y="
           >
             <Instagram />
           </a>
           <a
+            rel="noopener noreferrer"
             target={"_blank"}
             href="https://www.facebook.com/profile.php?id=100009097701301"
           >
             <Facebook />
           </a>
-          <a target={"_blank"} href="https://t.me/ArchOmardaas">
+          <a
+            rel="noopener noreferrer"
+            target={"_blank"}
+            href="https://t.me/ArchOmardaas"
+          >
             <Telegram />
           </a>
-          <a target={"_blank"} href="https://wa.me/qr/UYXQOPAEJRE3G1">
+          <a
+            rel="noopener noreferrer"
+            target={"_blank"}
+            href="https://wa.me/qr/UYXQOPAEJRE3G1"
+          >
             <WhatsApp />
           </a>
         </div>

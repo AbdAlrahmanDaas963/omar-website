@@ -7,7 +7,6 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import ShowWork from "./components/works/showWork/ShowWork";
-import WorkItem from "./components/works/showWork/WorkItem";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

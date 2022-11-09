@@ -2,13 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import omarPic from "../../img/omar-pic.png";
-import bubble from "../../img/bubble.png";
 
 import "./landing.css";
 
 function Landing() {
   return (
-    <div className="landing" id="Landing">
+    <div className="landing container" id="Landing">
       <div className="landing-content">
         <div className="content-info">
           <div className="info-head">

@@ -4,7 +4,7 @@ import WorkCard from "./WorkCard";
 
 function MyWorks() {
   return (
-    <div className="my-works" id="MyWorks">
+    <div className="my-works container" id="MyWorks">
       <div className="my-works-content">
         <div className="works-head">My Works</div>
         <div className="works-card">

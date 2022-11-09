@@ -74,3 +74,8 @@ li {
   width: 100%;
   height: fit-content;
 }
+.container {
+  margin: auto;
+  max-width: 1366px;
+  max-height: 800px;
+}
