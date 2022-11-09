@@ -23,15 +23,6 @@ function Header() {
       height: "0",
     },
   };
-  // const liVar = {
-  //   show: {
-  //     opacity: "1",
-  //   },
-  //   hide: {
-  //     opacity: "0",
-  //     transition: { delay: 0.1 },
-  //   },
-  // };
   const liVar = {
     visible: (i) => ({
       opacity: 1,
@@ -44,7 +35,6 @@ function Header() {
 
   const handleClick = () => {
     if (window.screen.width < 700) clicked ? hide() : show();
-    console.log("clicked");
   };
   const show = () => {
     setClicked(true);

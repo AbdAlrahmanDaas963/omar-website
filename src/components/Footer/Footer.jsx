@@ -19,16 +19,22 @@ function Footer() {
           <div className="line" />
         </div>
         <div className="social">
-          <a target={"_blank"} href="">
+          <a
+            target={"_blank"}
+            href="https://instagram.com/omar__daas?igshid=YmMyMTA2M2Y="
+          >
             <Instagram />
           </a>
-          <a target={"_blank"} href="">
+          <a
+            target={"_blank"}
+            href="https://www.facebook.com/profile.php?id=100009097701301"
+          >
             <Facebook />
           </a>
-          <a target={"_blank"} href="">
+          <a target={"_blank"} href="https://t.me/ArchOmardaas">
             <Telegram />
           </a>
-          <a target={"_blank"} href="">
+          <a target={"_blank"} href="https://wa.me/qr/UYXQOPAEJRE3G1">
             <WhatsApp />
           </a>
         </div>

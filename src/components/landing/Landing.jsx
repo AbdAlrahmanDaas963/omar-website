@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import omar from "../../img/omar.png";
+
 import omarPic from "../../img/omar-pic.png";
-// import omarPic from "../../img/omar-pic.jpeg";
 import bubble from "../../img/bubble.png";
+
 import "./landing.css";
 
 function Landing() {

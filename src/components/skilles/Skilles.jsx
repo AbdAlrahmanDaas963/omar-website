@@ -6,25 +6,25 @@ import "./skilles.css";
 function Skilles() {
   const items = [
     {
-      title: "Hand Drawing",
-    },
-    {
-      title: "LandScapes",
+      title: "Autocad",
     },
     {
       title: "3Ds max",
     },
     {
+      title: "Hand Drawing",
+    },
+    {
       title: "Illustrator",
     },
     {
-      title: "Autocad",
+      title: "photoshop",
     },
     {
       title: "Revit",
     },
     {
-      title: "photoshop",
+      title: "LandScapes",
     },
   ];
   return (

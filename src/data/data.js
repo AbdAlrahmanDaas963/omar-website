@@ -18,8 +18,6 @@ import Exerior2 from "./images/exerior/2.jpg";
 import Exerior3 from "./images/exerior/3.jpg";
 import Exerior4 from "./images/exerior/4.jpg";
 import Exerior5 from "./images/exerior/5.jpg";
-import Exerior6 from "./images/exerior/6.jpg";
-import Exerior7 from "./images/exerior/7.jpg";
 
 import logo1 from "./images/logo/1.jpg";
 
@@ -50,8 +48,6 @@ const ExeriorDesign = [
   { src: Exerior3 },
   { src: Exerior4 },
   { src: Exerior5 },
-  { src: Exerior6 },
-  { src: Exerior7 },
 ];
 
 const Logos = [{ src: logo1 }];
